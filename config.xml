@@ -19,7 +19,7 @@
 		<gap:platform name="android" minVersion="2.1" />
 	</gap:platforms>
 
-	<icon src="blurry.png" gap:role="default" />
+	<icon src="icon.jpg" gap:role="default" />
 
     <gap:splash src="weirdo.png" />
 

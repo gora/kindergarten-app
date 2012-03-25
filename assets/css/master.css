@@ -55,39 +55,17 @@ body {
 	    and then override this based on the element id */
 	display: none;
 }
-/* our three views */
 #welcome {
-  display: block;  
+    width:480px;
+    margin:0 auto;
 }
-
-#map { 
-  text-shadow: 0 1px 0 #fff;
+#icons {
+    margin:30px 8px 20px 8px;
 }
-
-  .map_image {
-    margin: auto;
-    height: 250px;
-    width: 250px;
-    border: 1px solid #aaa;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-
-#settings {
+#icons img {
+    float:left;
+    margin:2px;
 }
-
-  legend {
-    font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
-  }
-
-  fieldset {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  input {
-    margin-bottom: 8px;
-  }
+.clear {
+    clear:both;
+}
