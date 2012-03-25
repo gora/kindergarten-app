@@ -56,11 +56,13 @@ body {
     margin:0 auto;
 }
 #icons {
-    margin:30px 8px 20px 8px;
+    margin:18px 8px 25px 8px;
 }
 #icons img {
     float:left;
-    margin:2px;
+}
+#footer {
+    margin-top:5px;
 }
 .clear {
     clear:both;
