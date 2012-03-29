@@ -1,4 +1,6 @@
 // Gora: Added for orientation: Needs XUI
+document.addEventListener("orientationChanged", updateOrientation); 
+
 function onOrientationChange() {
     if( window.orientation == -90 || window.orientation == 90 ) {	    
 	// Switch to landscape
