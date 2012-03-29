@@ -50,4 +50,5 @@ function updateOrientation() {
 	});
     }
 }
-document.addEventListener("orientationChanged", updateOrientation); 
+//document.addEventListener("orientationChanged", updateOrientation); 
+x$(window).on('orientationchange', onOrientationChange);
