@@ -2,6 +2,8 @@
 function onOrientationChange() {
     if( window.orientation == -90 || window.orientation == 90 ) {	    
 	// Switch to landscape
+	alert( "Landscape" );
+	x$( "#welcome" ).css( "width", "480px" );
 	// Change main image
 	var src = x$( "#main-img,#footer-img" ).attr( "src" );
 	var idx = src.indexOf( "_portrait.jpg" );
@@ -19,6 +21,8 @@ function onOrientationChange() {
 	});
     } else {
 	// Switch to portrait
+	alert( "Portrait" );
+	x$( "#welcome" ).css( "width", "300px" );
 	// Change main image
 	var src = x$( "#main-img" ).attr( "src" );
 	var idx = src.indexOf( ".jpg" );
