@@ -12,8 +12,8 @@ function onOrientationChange() {
 		x$(this).attr( "src", src.substring( 0, idx ) + ".jpg" );
 	    }
 	});
-	x$( "#main-img" ).css( { "width": 480px; "height": 480px; } );
-	x$( "#footer-img" ).css( { "width": 480px; "height": 36px; } );
+	x$( "#main-img" ).css( { "width": 480px, "height": 480px } );
+	x$( "#footer-img" ).css( { "width": 480px, "height": 36px } );
 
 	// Change icons
 	x$( "a.rotate-img" ).each( function() {
@@ -21,7 +21,7 @@ function onOrientationChange() {
 	    idx = src.indexOf( "_portrait.jpg" );
 	    if( idx != -1 ) {  // Check should not be neeed
 		x$(this).first().attr( "src", src.substring( 0, idx ) + ".jpg" );
-		x$(this).first().css( { "width": 92px; "height": 96px; } );
+		x$(this).first().css( { "width": 92px, "height": 96px } );
 	    }
 	});
     } else {
@@ -36,8 +36,8 @@ function onOrientationChange() {
 		x$(this).attr( "src", src.substring( 0, idx ) + "_portrait.jpg" );
 	    }
 	});
-	x$( "#main-img" ).css( { "width": 300px; "height": 297px; } );
-	x$( "#footer-img" ).css( { "width": 300px; "height": 24px; } );
+	x$( "#main-img" ).css( { "width": 300px, "height": 297px } );
+	x$( "#footer-img" ).css( { "width": 300px, "height": 24px } );
 
 	// Change icons
 	x$( "a.rotate-img" ).each( function() {
@@ -45,7 +45,7 @@ function onOrientationChange() {
 	    idx = src.indexOf( ".jpg" );
 	    if( idx != -1 ) {  // Check should not be neeed
 		x$(this).first().attr( "src", src.substring( 0, idx ) + "_portrait.jpg" );
-		x$(this).first().css( { "width": 58px; "height": 65px; } );
+		x$(this).first().css( { "width": 58px, "height": 65px } );
 	    }
 	});
     }
