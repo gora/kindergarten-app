@@ -1,7 +1,5 @@
 // Gora: Added for orientation: Needs XUI
-document.addEventListener("orientationChanged", updateOrientation); 
-
-function onOrientationChange() {
+function updateOrientation() {
     if( window.orientation == -90 || window.orientation == 90 ) {	    
 	// Switch to landscape
 	alert( "Landscape" );
@@ -10,7 +8,7 @@ function onOrientationChange() {
 	x$( "#main-img, #footer-img" ).each( function() {
 	    var src = attr( "src" );
 	    var idx = src.indexOf( "_portrait.jpg" );
-	    if( idx != -1 ) {  // Check should not be neeed
+	    if( idx != -1 ) {
 		x$(this).attr( "src", src.substring( 0, idx ) + ".jpg" );
 	    }
 	});
@@ -19,9 +17,9 @@ function onOrientationChange() {
 
 	// Change icons
 	x$( "a.rotate-img" ).each( function() {
-	    src = x$(this).first().attr( "src" );
-	    idx = src.indexOf( "_portrait.jpg" );
-	    if( idx != -1 ) {  // Check should not be neeed
+	    var src = x$(this).first().attr( "src" );
+	    var idx = src.indexOf( "_portrait.jpg" );
+	    if( idx != -1 ) {
 		x$(this).first().attr( "src", src.substring( 0, idx ) + ".jpg" );
 		x$(this).first().css( { "width": 92px, "height": 96px } );
 	    }
@@ -43,8 +41,8 @@ function onOrientationChange() {
 
 	// Change icons
 	x$( "a.rotate-img" ).each( function() {
-	    src = x$(this).first().attr( "src" );
-	    idx = src.indexOf( ".jpg" );
+	    var src = x$(this).first().attr( "src" );
+	    var idx = src.indexOf( ".jpg" );
 	    if( idx != -1 ) {  // Check should not be neeed
 		x$(this).first().attr( "src", src.substring( 0, idx ) + "_portrait.jpg" );
 		x$(this).first().css( { "width": 58px, "height": 65px } );
@@ -52,5 +50,4 @@ function onOrientationChange() {
 	});
     }
 }
-
-x$(window).on('orientationchange', onOrientationChange);
+document.addEventListener("orientationChanged", updateOrientation); 
