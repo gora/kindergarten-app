@@ -1,0 +1,10 @@
+html { background: #000 url(../../index.jpg) top center no-repeat };
+body { background: url(../../index_portrait.jpg) top center no-repeat };
+
+@media screen and (orientation:portrait) {
+    body { opacity: 1; }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    body { opacity: 0; }
+}
