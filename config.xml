@@ -23,5 +23,5 @@
 	<icon src="icon.png" gap:role="default" />
 
 	<!-- sample preference specification -->
-	<preference name="autorotate" value="true" readonly="true"/>
+        <preference name="orientation" value="default" />
 </widget>
