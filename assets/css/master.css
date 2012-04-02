@@ -1,11 +1,8 @@
 body {
-  background: #fff;
-  background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#C8C8C8), color-stop(0.47, white), to(#C8C8C8));
-  margin: 0;
-  font: 18px Helvetica;
-  text-align: center;
+    margin: 0;
+    font: 18px Helvetica;
+    text-align: center;
 }
-
 #title_bar {
   /* need a position set to something for z-index to take effect */
   position: relative;
@@ -45,22 +42,67 @@ body {
 }
 
 #back_button {
-  background: grey;
+    background: grey;
 }
- 
 #welcome {
-    width:300px;
-    margin:0 auto;
+    position: relative;
+    margin: 0 auto;
+    width:320px;
 }
-#icons {
-    margin:18px 5px 25px 5px;
+#welcome-lscape {
+    position: relative;
+    margin: 0 auto;
+    width:480px;
 }
-#icons img {
+.icons {
+    width:100%;
+    position:absolute;
+    top:310px;
+    left:5px;
+}
+.icons img {
     float:left;
 }
 #footer {
-    margin-top:5px;
+    width:100%;
+    position:absolute;
+    top:380px;
+    left:0;
 }
 .clear {
     clear:both;
+}
+@media screen and (orientation:portrait) {
+    body {
+	background: #fff url(../../index_portrait.jpg) top center no-repeat;
+    }
+    #welcome-lscape {
+	display:none;
+    }
+    #welcome {
+	display:block;
+    }
+    .icons {
+	top:310px;
+    }
+    #footer {
+	top:380px;
+    }
+}
+@media screen and (orientation:landscape) {
+    body {
+	background: #fff url(../../index.jpg) top center no-repeat;
+    }
+    #welcome-lscape {
+	display:block;
+    }
+    #welcome {
+	display:none;
+    }
+    .icons {
+	top:500px;
+    }
+    #footer {
+	top:600px;
+    }
 }
