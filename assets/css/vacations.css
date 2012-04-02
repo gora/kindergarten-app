@@ -1,0 +1,34 @@
+@media screen and (orientation:portrait) {
+    body {
+	background: #fff url(../../vacations_portrait.jpg) top center no-repeat;
+    }
+    #welcome-lscape {
+	display:none;
+    }
+    #welcome {
+	display:block;
+    }
+    .icons {
+	top:310px;
+    }
+    #footer {
+	top:380px;
+    }
+}
+@media screen and (orientation:landscape) {
+    body {
+	background: #fff url(../../vacations.jpg) top center no-repeat;
+    }
+    #welcome-lscape {
+	display:block;
+    }
+    #welcome {
+	display:none;
+    }
+    .icons {
+	top:500px;
+    }
+    #footer {
+	top:600px;
+    }
+}
